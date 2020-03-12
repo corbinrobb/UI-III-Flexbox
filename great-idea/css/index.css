@@ -69,8 +69,6 @@ h1, h2, h3, h4, h5 {
 
 /* GENERAL STYLES */
 
-
-
 body {
 	margin: 2% 6%;
 	max-width: 900px;
@@ -99,10 +97,8 @@ header {
 	align-items: center;
 }
 
-
 header nav a {
 	color: lightgrey;
-
 }
 
 
@@ -291,22 +287,31 @@ footer small {
 }
 
 @media only screen and (max-width: 790px) {
-	.services-main, header, .services-hero {
+	.services-main, .hero, .services-hero {
 		height: auto;
 	}
 	.services-hero img {
 		height: 15vh;
 	}
 
-	.services-main > div {
+	.services-main > div, .top-row, .bottom-row  {
 		flex-direction: column;
 	}
 
-	.services-main section {
+	.hero {
+		flex-direction: column-reverse;
+	}
+
+	.services-main section, .hero div, .top-row div, .bottom-row div {
 		width: 100%;
 		margin: 2% 0;
 		text-align: center;
 	}
+
+	.top-row div, .bottom-row div{
+		text-align: left;
+	}
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -316,5 +321,10 @@ footer small {
 	.services-footer div {
 		margin-top: 7%;
 		width: auto;
+		
 	}
-}
+
+	footer {
+		align-items: center;
+	}
+	}
