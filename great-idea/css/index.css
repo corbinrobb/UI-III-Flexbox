@@ -49,7 +49,9 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+		box-sizing: border-box;
+		max-width: 100%;
+		/* border: 2px solid red !important; */
 }
 
 html, body {
@@ -64,3 +66,137 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* GENERAL STYLES */
+
+h1 {
+	font-size: 5em;
+}
+
+body {
+	margin: 2% 6%;
+	max-width: 900px;
+}
+
+
+/* HEADER NAV STYLES */
+header {
+	display: flex;
+	flex-direction: column;
+}
+
+.nav-bar {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-bar nav {
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-bar .logo {
+
+}
+
+header nav a {
+	text-decoration: none;
+	color: lightgrey;
+
+}
+
+
+/* HEADER HERO STYLES */
+.hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid black;
+	height: 40vh;
+}
+
+.hero div {
+	width: 50%;
+}
+
+.hero > * {
+	text-align: center;
+}
+
+.hero p {
+	border: 1px solid;
+	width: 35%;
+	padding: 1.5% 0.5%;
+}
+
+.hero-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* MAIN SECTION */
+
+main {
+	padding-bottom: 5%;
+	border-bottom: 1px solid;
+	display: flex;
+	flex-direction: column;
+}
+
+section > div {
+	display: flex;
+	flex-direction: column;
+}
+
+.top-row {
+	display: flex;
+}
+
+.top-row div {
+	width: 50%;
+	padding: 4% 0%;
+}
+
+.middle-img img {
+	width: 100%;
+}
+
+.bottom-row {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 3%;
+}
+
+.bottom-row div {
+	width: 31%;
+}
+
+/* FOOTER STYLES */
+
+footer {
+	display: flex;
+	flex-direction: column;
+	margin: 5% 0 15%;
+}
+
+footer address > * {
+	padding: 1%;
+}
+
+footer small {
+	align-self: center;
+	text-align: center;
+	font-size: 0.8em;
+	margin-top: 5%;
+}
+
+/* MEDIA QUERY STYLES */
+
+@media only screen and (min-width: 1000px) {
+  body {
+    margin: 2% auto;
+  }
+}
