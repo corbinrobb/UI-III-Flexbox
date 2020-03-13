@@ -246,6 +246,7 @@ footer small {
 	padding: 10px 12%;
 	border-radius: 5px;
 	border: 1px solid black;
+	background-color: white;
 }
 
 .services-main button:hover {
